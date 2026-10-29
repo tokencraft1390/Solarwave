@@ -10,9 +10,11 @@ Solarwave is a founder-directed micro-app factory and commercialization experime
 | CRUD | $10 USD | Single-table SQLite CRUD app |
 | CRUD + Webhook | $50 USD | CRUD app plus isolated webhook endpoint and per-app secret |
 
-Current live order-intake surface: https://viral-void-k22psqq.shipstatic.com
+Current live conversion storefront: https://melded-tide-md3d37b.shipstatic.com
 
-Payment checkout is **not yet verified live**. As of 2026-10-29, the connected PayPal account reports zero shareable payment links. Orders may be scoped through the live intake surface; provisioning begins only after payment is independently verified.
+The upgraded single-file storefront is committed as `index.html`. It includes an interactive tier configurator, dynamic scope/price preview, use-case prefills, bounded trust language, FAQ, mobile CTA, and a structured order handoff.
+
+Payment checkout is **not yet verified live**. As of 2026-10-29, the connected PayPal account reports zero shareable payment links. The current collection path is: configure order -> send structured request -> buyer-specific PayPal invoice -> independently verify cleared payment -> generate/validate -> deliver/deploy -> receipt.
 
 ## Architecture direction
 
@@ -40,7 +42,7 @@ Existing service: `tenant-demo-001`
 
 Service source: public image `python:3.11-slim` (not connected to this GitHub repository).
 
-The Railway service was last observed in `live` state, with one replica in `sfo`, no attached volume, and no latest deployment object returned by the connector.
+The Railway service was last observed in `live` state, with one replica in `sfo`, no attached volume, and no latest deployment object returned by the connector. A new repo-backed deployment from Solarwave was attempted and blocked because the Railway trial/account plan had expired.
 
 ## Evidence model
 
