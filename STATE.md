@@ -6,10 +6,14 @@ Snapshot date: 2026-10-29
 
 - Offer: ACTIVE FOR ORDER INTAKE.
 - Prices: $5 Static / $10 CRUD / $50 CRUD + Webhook.
-- Live order-intake URL: https://viral-void-k22psqq.shipstatic.com
+- Canonical live conversion storefront: https://melded-tide-md3d37b.shipstatic.com
+- Storefront source: `index.html` on `main`.
+- Storefront deployment status: success; no password; no expiry.
+- Storefront UX includes interactive tier selection, dynamic price/deliverable preview, clickable example prefills, mobile CTA, trust boundaries, FAQ, and structured order handoff.
+- Previous ShipStatic order page `https://viral-void-k22psqq.shipstatic.com` is superseded by the upgraded storefront and should not be used as the primary traffic destination.
 - Shareable PayPal payment link: NOT PRESENT. Connected PayPal account returned zero payment links on 2026-10-29.
 - Payment fallback: buyer-specific PayPal invoice after order/spec intake. Treat an order as paid only after payment is independently verified.
-- Verified receipts: none recorded in this snapshot.
+- Verified customer payment receipts: none recorded in this snapshot.
 
 ## GitHub state
 
@@ -17,7 +21,8 @@ Snapshot date: 2026-10-29
 - Default branch: `main`.
 - Repository is public.
 - Founder/admin access was verified through the connected GitHub account.
-- Deployable order-intake code and evidence ledgers are committed on `main`.
+- Deployable order-intake code, single-file storefront, and evidence ledgers are committed on `main`.
+- Storefront commit: `a258c148548fa67e3748aeb42f4c14fd41e25ae0`.
 
 ## Railway state
 
@@ -41,7 +46,12 @@ Result: the new repo-backed `solarwave` Railway service is **not deployed**. The
 
 ## ShipStatic state
 
-- Existing sales/order-intake deployment remains live at `https://viral-void-k22psqq.shipstatic.com`.
+- Canonical storefront deployment: `melded-tide-md3d37b.shipstatic.com`.
+- Deployment status: `success`.
+- Deployment labels: `solarwave`, `sales`, `production`, `ux-v1`.
+- Password protection: none.
+- Expiry: none.
+- Previous sales/order-intake deployment `viral-void-k22psqq.shipstatic.com` remains available but is superseded.
 - `solarwave.shipstatic.com` was checked and reported available.
 - Attempting to link that cleaner domain failed because the ShipStatic account reported its domain limit was reached and requires a Pro upgrade.
 - Do not represent `solarwave.shipstatic.com` as live.
@@ -68,4 +78,4 @@ Result: the new repo-backed `solarwave` Railway service is **not deployed**. The
 
 ## Next commercialization gate
 
-Receive a buyer order, issue a PayPal invoice, verify cleared payment, generate the bounded application, validate it, deliver/deploy it through an available route, and store the payment/delivery receipt and evidence hash.
+Drive qualified traffic to the upgraded storefront, receive a real buyer order, issue a PayPal invoice, verify cleared payment, generate the bounded application, validate it, deliver/deploy it through an available route, and store the payment/delivery receipt and evidence hash.
