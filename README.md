@@ -62,7 +62,9 @@ Production rules:
 
 ## Verified infrastructure state
 
-Canonical live storefront before the agency-wholesale refresh: `https://melded-tide-md3d37b.shipstatic.com`.
+Current agency-wholesale sales surface: `https://baseless-mind-y8sgs9r.shipstatic.com`.
+
+ShipStatic verified the deployment as successful on 2026-10-29 with labels `solarwave`, `sales`, `production`, and `agency-wholesale`. This storefront is buyer-facing; the GitHub repository is not the sales CTA.
 
 Railway project: `solar-tenant-poc`.
 
