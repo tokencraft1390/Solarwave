@@ -1,20 +1,48 @@
 # Solarwave
 
-Solarwave is a founder-directed micro-app factory and commercialization experiment focused on generating small, isolated customer applications without a shared customer codebase.
+Solarwave is a founder-directed micro-app fulfillment system for agencies, automation consultants, and operators who need a small custom application without turning it into a full software project.
 
-## Current commercial offer
+The commercial posture is **agency-first and white-label**: the partner keeps the client relationship, branding, and markup; Solarwave accepts a bounded requirement and returns a tested buyer-specific artifact.
 
-| Tier | Price | Scope |
+## Current wholesale offer
+
+| Tier | Wholesale price | Hard scope |
 |---|---:|---|
-| Static | $5 USD | Single-file display app |
-| CRUD | $10 USD | Single-table SQLite CRUD app |
-| CRUD + Webhook | $50 USD | CRUD app plus isolated webhook endpoint and per-app secret |
+| Quick Utility | $350 USD | Static/intake/calculator/status utility; up to 5 core fields; no persistent CRUD |
+| Working Micro-App | $650 USD | CRUD tracker/dashboard/portal-lite; up to 5 core fields; single role; simple persistence |
+| Connected Micro-App | $1,250 USD | Working Micro-App plus one bounded webhook/API integration or workflow trigger |
 
-Current live conversion storefront: https://melded-tide-md3d37b.shipstatic.com
+Optional commercial add-ons:
 
-The upgraded single-file storefront is committed as `index.html`. It includes an interactive tier configurator, dynamic scope/price preview, use-case prefills, bounded trust language, FAQ, mobile CTA, and a structured order handoff.
+- Rush acceptance/delivery lane: **+$250** when capacity is explicitly accepted.
+- Recurring care: **$199/month** for up to two bounded changes per month; redesigns and new integrations are separate scope.
+- First clean agency pilot: **$350** when the requirement fits the Quick Utility boundary.
 
-Payment checkout is **not yet verified live**. As of 2026-10-29, the connected PayPal account reports zero shareable payment links. The current collection path is: configure order -> send structured request -> buyer-specific PayPal invoice -> independently verify cleared payment -> generate/validate -> deliver/deploy -> receipt.
+The public buyer value proposition is fixed cost, bounded scope, white-label delivery, and fast turnaround. Solarwave does **not** advertise an internal build-time target as a customer guarantee.
+
+## Buyer and delivery boundary
+
+The Solarwave factory, generator, orchestration logic, internal prompts, validation rules, and operating process are not automatically part of a customer deliverable. A buyer may receive the generated artifact/source when that delivery type is included in the accepted order; that does not transfer the core factory.
+
+Do not use the core GitHub repository as the sales CTA. Buyer-facing proof should be the storefront/demo, one-page scope sheet, example artifact, test evidence, and delivery receipt.
+
+## Order-to-cash path
+
+`partner requirement -> IN SCOPE / OUT OF SCOPE -> fixed quote -> payment/approved PO -> verify cleared payment -> generate -> validate -> acceptance test -> evidence receipt -> white-label delivery -> ask for next job`
+
+For a new partner, standard jobs are prepaid. The connected PayPal path currently supports buyer-specific invoicing; a shareable one-click payment link has not yet been verified live. A deal is not counted as paid until the payment state is independently verified.
+
+## Scope rules
+
+The bounded instant lane rejects rather than improvises. It exits standard scope when the requirement includes any of the following without a separate quote:
+
+- More than five core user-defined fields.
+- Multiple user roles or custom RBAC/authentication.
+- More than one external integration.
+- Regulated or highly sensitive data handling.
+- Complex relational data models or reporting.
+- Embedded payment processing.
+- Ambiguous acceptance criteria.
 
 ## Architecture direction
 
@@ -34,15 +62,11 @@ Production rules:
 
 ## Verified infrastructure state
 
-Railway project: `solar-tenant-poc`
+Canonical live storefront before the agency-wholesale refresh: `https://melded-tide-md3d37b.shipstatic.com`.
 
-Production environment: `bd32a560-378b-4391-a5a0-a170bb1864cc`
+Railway project: `solar-tenant-poc`.
 
-Existing service: `tenant-demo-001`
-
-Service source: public image `python:3.11-slim` (not connected to this GitHub repository).
-
-The Railway service was last observed in `live` state, with one replica in `sfo`, no attached volume, and no latest deployment object returned by the connector. A new repo-backed deployment from Solarwave was attempted and blocked because the Railway trial/account plan had expired.
+The existing Railway service was previously observed live from the public image `python:3.11-slim`, not from this repository. A new repo-backed deployment was blocked because the Railway trial/account plan had expired. Do not represent the repo-backed Railway deployment as live until that changes and is verified.
 
 ## Evidence model
 
@@ -53,4 +77,4 @@ Solarwave keeps two separate ledgers:
 
 AI assistance is recorded as an implementation/construction method, not as a founder, owner, or rights holder.
 
-See `STATE.md`, `PROVENANCE.md`, and `RIGHTS.md` for the current evidence snapshot.
+See `STATE.md`, `PROVENANCE.md`, `RIGHTS.md`, `AGENCY_ONE_PAGER.md`, and `COMMERCIALIZATION.md` for the current operating snapshot.
