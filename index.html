@@ -3,108 +3,142 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Solarwave — White-Label Micro-App Fulfillment</title>
-<meta name="description" content="White-label micro-app fulfillment for agencies. Fixed wholesale scopes from $350. You keep the client, brand and markup.">
+<title>Solarwave — Know If It Fits Before You Pay</title>
+<meta name="description" content="Solarwave is a bounded white-label micro-app fulfillment lane. Describe the real backlog item and get a deterministic fit decision, fixed wholesale tier, and exact next step.">
 <style>
-:root{--bg:#07111f;--panel:#0d1a2d;--panel2:#101d31;--line:#20324d;--text:#f7fbff;--muted:#9fb0c7;--accent:#5eead4;--blue:#68a7ff;--warm:#fbbf24;--radius:22px;--shadow:0 24px 70px rgba(0,0,0,.32)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(circle at 12% 0%,rgba(94,234,212,.13),transparent 34%),radial-gradient(circle at 88% 8%,rgba(104,167,255,.13),transparent 34%),var(--bg);color:var(--text);line-height:1.55}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0}.brand{display:flex;gap:10px;align-items:center;font-weight:900;letter-spacing:-.03em}.mark{width:34px;height:34px;border-radius:50%;background:conic-gradient(from 220deg,var(--accent),var(--blue),var(--warm),var(--accent));box-shadow:0 0 34px rgba(94,234,212,.28)}.pill{border:1px solid var(--line);background:rgba(255,255,255,.035);padding:7px 10px;border-radius:999px;color:var(--muted);font-size:13px}.hero{display:grid;grid-template-columns:1.08fr .92fr;gap:48px;align-items:center;padding:62px 0 54px}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.15em;color:var(--accent);font-weight:900}.hero h1{font-size:clamp(46px,7vw,82px);line-height:.96;letter-spacing:-.065em;margin:14px 0 22px}.hero p{font-size:19px;color:var(--muted);max-width:700px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}.btn{border:0;border-radius:14px;padding:14px 18px;font-weight:850;font-size:15px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}.btn-primary{background:linear-gradient(135deg,var(--accent),var(--blue));color:#06121d}.btn-secondary{color:var(--text);background:#11213a;border:1px solid var(--line)}.proof{display:flex;gap:18px;flex-wrap:wrap;color:#c1cce0;font-size:14px}.proof span::before{content:"✓";color:var(--accent);font-weight:900;margin-right:7px}.glass{background:linear-gradient(180deg,rgba(17,31,53,.93),rgba(8,19,35,.95));border:1px solid rgba(255,255,255,.09);border-radius:var(--radius);box-shadow:var(--shadow)}.brief{padding:24px}.brief h3{margin:0 0 7px}.brief p{font-size:14px}.brief-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}.brief-box{padding:14px;border:1px solid var(--line);border-radius:14px;background:#091527}.brief-box span{display:block;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.1em}.brief-box b{display:block;margin-top:5px}.note{margin-top:16px;border-left:3px solid var(--accent);padding:11px 14px;background:rgba(94,234,212,.06);color:#c9fff4;border-radius:0 12px 12px 0;font-size:13px}section{padding:68px 0}.section-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:24px}.section-head h2{font-size:clamp(32px,5vw,50px);letter-spacing:-.05em;margin:5px 0}.section-head p{color:var(--muted);max-width:570px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{padding:25px;border:1px solid var(--line);background:linear-gradient(180deg,#0c192c,#091423);border-radius:20px}.card.featured{border-color:rgba(94,234,212,.58);transform:translateY(-6px)}.card .tag{font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.12em;color:var(--accent)}.price{font-size:44px;font-weight:950;letter-spacing:-.055em;margin:8px 0}.card p,.card li{color:var(--muted)}.card ul{padding-left:18px}.subprice{font-size:13px;color:#c8d5e8;margin-top:10px}.config{display:grid;grid-template-columns:.9fr 1.1fr;gap:18px}.panel{padding:24px}.tiers{display:grid;grid-template-columns:1fr;gap:8px}.tier{position:relative;padding:14px;border:1px solid var(--line);border-radius:14px;background:#091527;cursor:pointer;display:flex;justify-content:space-between;gap:14px;align-items:center}.tier.active{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent);background:rgba(94,234,212,.055)}.tier input{position:absolute;opacity:0}.tier b{font-size:18px}.tier small{color:var(--muted)}label.field{display:block;margin-top:14px;font-size:13px;font-weight:800;color:#d6e1ee}input[type=text],textarea{width:100%;margin-top:7px;background:#081424;border:1px solid var(--line);border-radius:13px;padding:13px 14px;color:var(--text);font:inherit;outline:none}textarea{min-height:92px;resize:vertical}input:focus,textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(104,167,255,.1)}.summary{padding:24px}.row{display:flex;justify-content:space-between;gap:18px;border-bottom:1px solid rgba(255,255,255,.07);padding:13px 0}.row span{color:var(--muted)}.row b{text-align:right}.summary .btn{width:100%;margin-top:14px}.hint{font-size:12px;color:var(--muted);margin-top:10px}.steps{display:grid;grid-template-columns:repeat(6,1fr);gap:9px}.step{padding:17px;border-top:1px solid var(--line);background:rgba(255,255,255,.015);border-radius:0 0 12px 12px}.num{font-size:12px;color:var(--accent);font-weight:900}.step h4{margin:7px 0 5px}.step p{font-size:12px;color:var(--muted)}.boundary{display:grid;grid-template-columns:1fr 1fr;gap:16px}.boundary>div{padding:24px}.boundary p,.boundary li{color:var(--muted)}details{border-bottom:1px solid var(--line);padding:18px 0}summary{cursor:pointer;font-weight:850}details p{color:var(--muted);max-width:790px}.closing{text-align:center;padding:88px 0 106px}.closing h2{font-size:clamp(40px,6vw,72px);line-height:.98;letter-spacing:-.055em;margin:0 auto 20px;max-width:880px}.closing p{color:var(--muted);max-width:680px;margin:0 auto 26px}footer{border-top:1px solid var(--line);padding:26px 0 70px;color:var(--muted);font-size:13px}.footerrow{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.sticky{display:none}@media(max-width:900px){.hero,.config{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.card.featured{transform:none}.steps{grid-template-columns:repeat(2,1fr)}.boundary{grid-template-columns:1fr}.section-head{display:block}}@media(max-width:600px){.wrap{width:min(100% - 20px,1180px)}.hero{padding-top:30px}.hero h1{font-size:49px}.brief-grid{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.sticky{display:block;position:fixed;left:10px;right:10px;bottom:10px;z-index:20}.sticky .btn{width:100%;box-shadow:0 12px 40px rgba(0,0,0,.4)}body{padding-bottom:70px}}
+:root{--bg:#07111f;--panel:#0b1728;--panel2:#0f1d31;--line:#213550;--text:#f7fbff;--muted:#9fb0c7;--accent:#5eead4;--blue:#78aaff;--warn:#fbbf24;--bad:#fb7185;--good:#86efac;--radius:20px;--shadow:0 28px 80px rgba(0,0,0,.34)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 10% 0%,rgba(94,234,212,.13),transparent 31%),radial-gradient(circle at 90% 0%,rgba(120,170,255,.14),transparent 31%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}.wrap{width:min(1120px,calc(100% - 28px));margin:auto}nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0}.brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:-.03em}.mark{width:33px;height:33px;border-radius:50%;background:conic-gradient(from 210deg,var(--accent),var(--blue),var(--warn),var(--accent));box-shadow:0 0 36px rgba(94,234,212,.24)}.truth{font-size:12px;color:#c4d1e2;border:1px solid var(--line);border-radius:999px;padding:7px 10px;background:rgba(255,255,255,.03)}main{padding:54px 0 88px}.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:end;margin-bottom:32px}.eyebrow{font-size:12px;letter-spacing:.15em;text-transform:uppercase;font-weight:900;color:var(--accent)}h1{font-size:clamp(45px,7.5vw,82px);line-height:.95;letter-spacing:-.06em;margin:12px 0 18px}.lead{font-size:19px;color:var(--muted);max-width:700px}.truthbox{padding:22px;border:1px solid rgba(255,255,255,.08);background:linear-gradient(180deg,rgba(16,31,52,.94),rgba(8,19,34,.96));border-radius:var(--radius);box-shadow:var(--shadow)}.truthbox b{display:block;font-size:18px;margin-bottom:8px}.truthbox p{margin:0;color:var(--muted)}.prices{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}.pricechip{padding:12px;border:1px solid var(--line);border-radius:13px;background:#081525}.pricechip span{display:block;color:var(--muted);font-size:11px}.pricechip strong{font-size:20px}.workspace{display:grid;grid-template-columns:1fr .9fr;gap:16px;align-items:start}.panel{border:1px solid rgba(255,255,255,.085);background:linear-gradient(180deg,rgba(15,29,49,.96),rgba(8,18,32,.98));border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}.panel h2{font-size:28px;letter-spacing:-.035em;margin:7px 0 4px}.panel .intro{color:var(--muted);margin:0 0 18px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{display:block;font-size:12px;font-weight:850;color:#dbe5f2;margin-top:12px}.field small{font-weight:500;color:var(--muted)}input,textarea,select{width:100%;margin-top:7px;border:1px solid var(--line);border-radius:12px;background:#071322;color:var(--text);padding:12px 13px;font:inherit;outline:none}textarea{min-height:88px;resize:vertical}input:focus,textarea:focus,select:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(120,170,255,.1)}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.btn{appearance:none;border:0;border-radius:13px;padding:13px 16px;font-weight:900;font-size:14px;cursor:pointer;text-decoration:none;display:inline-flex;justify-content:center;align-items:center}.primary{background:linear-gradient(135deg,var(--accent),var(--blue));color:#06121d}.secondary{background:#11213a;color:var(--text);border:1px solid var(--line)}.result{position:sticky;top:14px}.status{display:inline-flex;align-items:center;gap:8px;padding:7px 10px;border-radius:999px;font-size:12px;font-weight:950;letter-spacing:.08em}.status.neutral{background:#16253b;color:#cbd5e1}.status.good{background:rgba(134,239,172,.12);color:var(--good);border:1px solid rgba(134,239,172,.28)}.status.bad{background:rgba(251,113,133,.11);color:#fda4af;border:1px solid rgba(251,113,133,.28)}.status.warn{background:rgba(251,191,36,.1);color:#fde68a;border:1px solid rgba(251,191,36,.25)}.decision{font-size:38px;line-height:1;letter-spacing:-.045em;margin:16px 0 8px}.money{font-size:56px;font-weight:950;letter-spacing:-.06em;margin:12px 0 0}.money small{font-size:13px;font-weight:700;color:var(--muted);letter-spacing:0}.rule{border-top:1px solid rgba(255,255,255,.075);margin:18px 0}.facts{display:grid;gap:9px}.fact{display:flex;justify-content:space-between;gap:18px}.fact span{color:var(--muted)}.fact b{text-align:right}.box{margin-top:16px;padding:14px;border:1px solid var(--line);background:#071423;border-radius:13px}.box h3{font-size:13px;margin:0 0 8px}.box ul{margin:0;padding-left:18px;color:#c7d3e2}.box li+li{margin-top:5px}.next{margin-top:16px;padding:14px;border-left:3px solid var(--accent);background:rgba(94,234,212,.055);border-radius:0 12px 12px 0;color:#ccfbf1}.fine{margin-top:14px;color:var(--muted);font-size:12px}.proofline{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}.proof{padding:17px;border:1px solid var(--line);background:rgba(255,255,255,.022);border-radius:14px}.proof b{display:block}.proof span{font-size:13px;color:var(--muted)}footer{border-top:1px solid var(--line);padding:25px 0 60px;color:var(--muted);font-size:12px}.footerrow{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}@media(max-width:900px){.hero,.workspace{grid-template-columns:1fr}.result{position:static}.proofline{grid-template-columns:1fr}.prices{grid-template-columns:1fr 1fr 1fr}}@media(max-width:620px){main{padding-top:28px}.grid2{grid-template-columns:1fr}.prices{grid-template-columns:1fr}.decision{font-size:32px}.money{font-size:48px}.truth{display:none}}
 </style>
 </head>
 <body>
 <div class="wrap">
-<nav><div class="brand"><div class="mark"></div><span>Solarwave</span></div><span class="pill">Agency wholesale · bounded builds</span></nav>
+<nav><div class="brand"><div class="mark"></div><span>Solarwave</span></div><div class="truth">Simple scope. Fixed boundary. No fake automation.</div></nav>
 <main>
 <section class="hero">
-<div>
-<div class="eyebrow">White-label micro-app fulfillment</div>
-<h1>You keep the client. We handle the bounded build.</h1>
-<p>Solarwave gives agencies and automation consultants a fixed-cost production lane for the small custom tools that otherwise sit in backlog: intake utilities, trackers, dashboards, portal-lite surfaces and webhook companions.</p>
-<div class="actions"><a class="btn btn-primary" href="#scope">Price a real backlog item</a><a class="btn btn-secondary" href="#packages">See wholesale packages</a></div>
-<div class="proof"><span>Your brand and markup</span><span>Up to 5 core fields</span><span>Fixed wholesale scope</span><span>Evidence-backed handoff</span></div>
-</div>
-<div class="glass brief">
-<div class="eyebrow">First-job proof</div><h3>Start with one real sanitized requirement.</h3><p>Skip the generic demo. Send a bounded backlog item and get an IN SCOPE / OUT OF SCOPE decision, fixed wholesale price, inclusions, exclusions and acceptance test.</p>
-<div class="brief-grid"><div class="brief-box"><span>First clean pilot</span><b>$350</b></div><div class="brief-box"><span>Client ownership</span><b>Stays with your agency</b></div><div class="brief-box"><span>Standard target</span><b>Same business day</b></div><div class="brief-box"><span>Core factory</span><b>Not part of delivery</b></div></div>
-<div class="note">Production starts only after the accepted scope and cleared payment are verified.</div>
-</div>
+<div><div class="eyebrow">White-label micro-app fulfillment</div><h1>Paste the backlog item. Get the truth before you pay.</h1><p class="lead">Solarwave is for agencies and operators with a small, real software job that should not become a six-week custom project. Describe the job below. The fit check applies the published scope rules and returns a standard wholesale tier—or tells you exactly why it does not fit.</p></div>
+<div class="truthbox"><b>What is real today</b><p>The fit decision below is deterministic. Standard work is scoped first, then invoiced, then built and acceptance-tested after payment is verified. This page does not claim an unverified instant app generator or an unverified one-click checkout.</p><div class="prices"><div class="pricechip"><span>Quick Utility</span><strong>$350</strong></div><div class="pricechip"><span>Working Micro-App</span><strong>$650</strong></div><div class="pricechip"><span>Connected Micro-App</span><strong>$1,250</strong></div></div></div>
 </section>
 
-<section id="packages">
-<div class="section-head"><div><div class="eyebrow">Wholesale packages</div><h2>Enough margin to resell. Enough boundary to deliver.</h2></div><p>The lane is deliberately constrained so you can quote it quickly, preserve your client relationship, and avoid turning a small utility into a custom-software program.</p></div>
-<div class="cards">
-<div class="card"><div class="tag">Quick Utility</div><div class="price">$350</div><h3>Small surface, clear outcome</h3><p>For intake, calculators, status pages, lookup/reference tools and other bounded utilities.</p><ul><li>Up to 5 core fields</li><li>No persistent CRUD</li><li>One acceptance test</li></ul><div class="subprice">First clean agency pilot fits here.</div></div>
-<div class="card featured"><div class="tag">Working Micro-App</div><div class="price">$650</div><h3>A real operational tool</h3><p>For trackers, dashboard/admin utilities, portal-lite surfaces and simple record workflows.</p><ul><li>Up to 5 core fields</li><li>Single role</li><li>Simple persistence</li></ul><div class="subprice">Best fit for most agency overflow work.</div></div>
-<div class="card"><div class="tag">Connected Micro-App</div><div class="price">$1,250</div><h3>One bounded connection</h3><p>Working Micro-App scope plus one webhook/API integration or bounded workflow trigger.</p><ul><li>One integration maximum</li><li>Per-app secret where applicable</li><li>Extras re-quoted</li></ul><div class="subprice">Rush lane +$250 when explicitly accepted.</div></div>
+<section class="workspace" id="fit">
+<div class="panel">
+<div class="eyebrow">30-second fit check</div><h2>Describe the actual job.</h2><p class="intro">No call required. No AI guessing. These inputs map directly to the standard Solarwave boundary.</p>
+<div class="grid2">
+<label class="field">Agency / company <small>(optional)</small><input id="agency" type="text" maxlength="80" placeholder="Acme Automation"></label>
+<label class="field">Job name <small>(optional)</small><input id="job" type="text" maxlength="80" placeholder="Lead intake tracker"></label>
 </div>
+<label class="field">Outcome — what must the operator be able to do?<textarea id="outcome" maxlength="650" placeholder="Example: Add a lead, see its status, and update the owner from one simple screen."></textarea></label>
+<label class="field">Core fields — comma-separated, maximum 5<input id="fields" type="text" maxlength="260" placeholder="Name, Email, Service, Status, Owner"></label>
+<div class="grid2">
+<label class="field">Saved records / CRUD?<select id="persistence"><option value="no">No</option><option value="yes">Yes</option></select></label>
+<label class="field">External integrations?<select id="integrations"><option value="0">None</option><option value="1">One bounded API / webhook / trigger</option><option value="2">Two or more</option></select></label>
+<label class="field">User roles?<select id="roles"><option value="1">One role / no custom RBAC</option><option value="2">Multiple roles or custom RBAC</option></select></label>
+<label class="field">Regulated / highly sensitive data?<select id="sensitive"><option value="no">No</option><option value="yes">Yes</option></select></label>
+<label class="field">Embedded payment processing?<select id="payments"><option value="no">No</option><option value="yes">Yes</option></select></label>
+<label class="field">Complex relational model / reporting?<select id="complex"><option value="no">No</option><option value="yes">Yes</option></select></label>
+</div>
+<label class="field">Done when… — one acceptance test<textarea id="acceptance" maxlength="500" placeholder="Example: A user can create a lead, reload the page, update Status, and see the saved value after another reload."></textarea></label>
+<div class="actions"><button class="btn primary" id="checkBtn">Check fit</button><button class="btn secondary" id="exampleBtn">Load a real example</button></div>
+</div>
+
+<aside class="panel result" aria-live="polite">
+<div id="status" class="status neutral">NOT CHECKED</div>
+<div id="decision" class="decision">One job. One answer.</div>
+<p id="explain" class="intro">Complete the outcome, fields, and acceptance test, then run the fit check.</p>
+<div id="priceWrap" hidden><div id="price" class="money">$0 <small>wholesale</small></div></div>
+<div class="rule"></div>
+<div class="facts"><div class="fact"><span>Standard field limit</span><b>5</b></div><div class="fact"><span>Roles</span><b>1 standard role</b></div><div class="fact"><span>Integrations</span><b>0 or 1</b></div><div class="fact"><span>Production starts</span><b>After cleared payment</b></div></div>
+<div id="reasons" class="box" hidden><h3 id="reasonTitle">Decision basis</h3><ul id="reasonList"></ul></div>
+<div id="next" class="next">The result will tell you what happens next.</div>
+<div class="actions"><a id="sendBtn" class="btn primary" href="#" hidden>Send accepted scope</a><button id="copyBtn" class="btn secondary" hidden>Copy decision</button></div>
+<div class="fine">Payment truth: the currently verified path is a buyer-specific invoice or another explicitly accepted payment rail. A pending invoice is not counted as paid revenue. Ordinary delivery does not transfer the Solarwave core factory.</div>
+</aside>
 </section>
 
-<section id="scope">
-<div class="section-head"><div><div class="eyebrow">Fast scope</div><h2>Send the requirement, not a meeting request.</h2></div><p>Choose the closest package and define “done.” Solarwave will confirm whether it belongs in the standard lane before money changes hands.</p></div>
-<div class="config">
-<div class="glass panel">
-<div class="tiers" id="tiers">
-<label class="tier active"><input type="radio" name="tier" value="quick" checked><div><b>Quick Utility</b><small>Static / intake / calculator / status</small></div><b>$350</b></label>
-<label class="tier"><input type="radio" name="tier" value="working"><div><b>Working Micro-App</b><small>CRUD / tracker / dashboard / portal-lite</small></div><b>$650</b></label>
-<label class="tier"><input type="radio" name="tier" value="connected"><div><b>Connected Micro-App</b><small>Working app + one integration</small></div><b>$1,250</b></label>
-</div>
-<label class="field">Agency / company<input id="agency" type="text" maxlength="80" placeholder="Your agency"></label>
-<label class="field">App / utility name<input id="appName" type="text" maxlength="80" placeholder="Example: Lead Intake Tracker"></label>
-<label class="field">Outcome<textarea id="outcome" maxlength="600" placeholder="What should this tool let the operator accomplish?"></textarea></label>
-<label class="field">Core fields — maximum 5<input id="fields" type="text" maxlength="180" placeholder="Name, Email, Service, Status, Owner"></label>
-<label class="field">Done when…<textarea id="acceptance" maxlength="420" placeholder="One sentence acceptance test, e.g. A user can create a lead and update its status after reload."></textarea></label>
-<label class="field">Integration, if Connected tier<input id="integration" type="text" maxlength="180" placeholder="Example: POST one signed webhook to agency endpoint"></label>
-</div>
-<div class="glass summary">
-<div class="eyebrow">Current scope</div><h3 id="tierTitle">Quick Utility</h3>
-<div class="row"><span>Wholesale price</span><b id="price">$350</b></div>
-<div class="row"><span>Field limit</span><b>Up to 5 core fields</b></div>
-<div class="row"><span>Role model</span><b id="roles">No custom roles</b></div>
-<div class="row"><span>Persistence</span><b id="persistence">Not included</b></div>
-<div class="row"><span>Integration</span><b id="integrationRule">Not included</b></div>
-<div class="row"><span>Delivery target</span><b>Same business day after accepted scope + verified payment</b></div>
-<div class="note">Generated source/artifact may be included when agreed. The Solarwave core factory, generator, orchestration logic, internal prompts and validation process are not transferred by an ordinary order.</div>
-<button class="btn btn-primary" id="sendBtn">Send scope for fixed quote</button>
-<button class="btn btn-secondary" id="copyBtn">Copy sanitized scope</button>
-<div class="hint">Current payment path: buyer-specific PayPal invoice or another explicitly accepted rail. Pending payment is not treated as collected revenue.</div>
-</div>
-</div>
+<section class="proofline" aria-label="Buyer boundary">
+<div class="proof"><b>You keep the client.</b><span>White-label delivery. Your brand, pricing, markup, and client relationship stay yours.</span></div>
+<div class="proof"><b>You get a testable artifact.</b><span>Accepted scope, validation, acceptance test, delivery evidence, and artifact/source when the order includes it.</span></div>
+<div class="proof"><b>Solarwave keeps the factory.</b><span>Generator/orchestration internals, prompts, factory rules, and future platform rights are not transferred by an ordinary order.</span></div>
 </section>
-
-<section>
-<div class="section-head"><div><div class="eyebrow">Order-to-cash</div><h2>Short path from backlog to receipt.</h2></div><p>No speculative build work. The requirement is bounded first, then the payment state is verified, then production begins.</p></div>
-<div class="steps"><div class="step"><span class="num">01</span><h4>Send scope</h4><p>Sanitized requirement and acceptance test.</p></div><div class="step"><span class="num">02</span><h4>Bound it</h4><p>IN SCOPE / OUT OF SCOPE plus fixed quote.</p></div><div class="step"><span class="num">03</span><h4>Pay</h4><p>Invoice or accepted payment rail.</p></div><div class="step"><span class="num">04</span><h4>Verify</h4><p>Cleared funds before build begins.</p></div><div class="step"><span class="num">05</span><h4>Build + test</h4><p>Generate, validate and test to acceptance.</p></div><div class="step"><span class="num">06</span><h4>Deliver + repeat</h4><p>Evidence-backed handoff, then next-job ask.</p></div></div>
-</section>
-
-<section>
-<div class="boundary"><div class="glass"><div class="eyebrow">Inside the lane</div><h3>Designed for boringly clear delivery.</h3><ul><li>One small operational outcome</li><li>Maximum five core fields</li><li>One role in Working / Connected scope</li><li>One external integration maximum in Connected</li><li>One-sentence acceptance test</li><li>Sanitized inputs only before contract/payment</li></ul></div><div class="glass"><div class="eyebrow">Re-quote / out of scope</div><h3>We reject scope creep instead of hiding it.</h3><ul><li>Multiple roles or custom RBAC/auth</li><li>Regulated/highly sensitive data</li><li>Multiple integrations</li><li>Complex relational/reporting systems</li><li>Embedded payment processing</li><li>Ambiguous acceptance criteria</li></ul></div></div>
-</section>
-
-<section>
-<div class="section-head"><div><div class="eyebrow">FAQ</div><h2>What an agency needs to know.</h2></div></div>
-<details><summary>Do I have to reveal Solarwave to my client?</summary><p>No. The standard commercial model is white-label fulfillment. Your agency keeps the client relationship, branding and markup.</p></details>
-<details><summary>Does my client get the Solarwave factory?</summary><p>No. Ordinary delivery can include the generated artifact/source if that is part of the accepted order. The core generator, orchestration logic, internal prompts and validation process remain outside the deliverable.</p></details>
-<details><summary>Is delivery guaranteed in a fixed number of minutes?</summary><p>No. Standard accepted scopes target same-business-day delivery after complete inputs and verified payment. Internal production targets are not sold as guarantees.</p></details>
-<details><summary>What happens if my request is too large?</summary><p>Solarwave returns OUT OF SCOPE and re-quotes it rather than silently expanding the job.</p></details>
-<details><summary>Can we start before payment clears?</summary><p>Not for a new standard partner. Production begins after the accepted scope and payment state are verified.</p></details>
-</section>
-
-<section class="closing"><div class="eyebrow">First paid proof</div><h2>Send the small client deliverable you would rather not put back on your queue.</h2><p>If it fits, you will get a fixed wholesale scope. If it does not, you will get a clean OUT OF SCOPE instead of a vague consulting funnel.</p><a class="btn btn-primary" href="#scope">Price a backlog item</a></section>
 </main>
-<footer><div class="footerrow"><span>Solarwave · agency white-label micro-app fulfillment</span><span>Commercial evidence state: 2026-10-29</span></div></footer>
+<footer><div class="footerrow"><span>Solarwave · bounded agency micro-app fulfillment</span><span>Commercial state: fit-check live; standard payment link not represented as live until verified.</span></div></footer>
 </div>
-<div class="sticky"><a class="btn btn-primary" href="#scope">First clean pilot · $350</a></div>
 <script>
-const tiers={quick:{price:350,title:'Quick Utility',roles:'No custom roles',persistence:'Not included',integration:'Not included'},working:{price:650,title:'Working Micro-App',roles:'Single role',persistence:'Simple persistence',integration:'Not included'},connected:{price:1250,title:'Connected Micro-App',roles:'Single role',persistence:'Simple persistence',integration:'One bounded webhook/API integration'}};
-let selected='quick';
 const $=id=>document.getElementById(id);
-function money(n){return '$'+n.toLocaleString('en-US')}
-function setTier(t){selected=t;document.querySelectorAll('.tier').forEach(el=>el.classList.toggle('active',el.querySelector('input').value===t));document.querySelector(`input[value="${t}"]`).checked=true;render()}
-function safeFields(){return $('fields').value.split(',').map(s=>s.trim()).filter(Boolean).slice(0,5)}
-function render(){const t=tiers[selected];$('tierTitle').textContent=t.title;$('price').textContent=money(t.price);$('roles').textContent=t.roles;$('persistence').textContent=t.persistence;$('integrationRule').textContent=t.integration}
-function scopeText(){const t=tiers[selected];return `SOLARWAVE AGENCY SCOPE\n\nAgency: ${$('agency').value.trim()||'[agency]'}\nPackage: ${t.title}\nWholesale: ${money(t.price)}\nApp / utility: ${$('appName').value.trim()||'[name]'}\nOutcome: ${$('outcome').value.trim()||'[outcome]'}\nCore fields (max 5): ${safeFields().join(', ')||'[fields]'}\nAcceptance test: ${$('acceptance').value.trim()||'[done when]'}\nIntegration: ${selected==='connected'?($('integration').value.trim()||'[one bounded integration]'):'Not included'}\n\nPlease return IN SCOPE / OUT OF SCOPE, exact inclusions/exclusions, fixed quote, payment path and delivery target.`}
-document.querySelectorAll('.tier input').forEach(i=>i.addEventListener('change',()=>setTier(i.value)));
-$('sendBtn').addEventListener('click',()=>{const t=tiers[selected];const subject=encodeURIComponent(`Solarwave agency scope — ${t.title} — ${money(t.price)}`);const body=encodeURIComponent(scopeText());location.href=`mailto:zachary.ribble@flowlinkrev.com?subject=${subject}&body=${body}`});
-$('copyBtn').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(scopeText());$('copyBtn').textContent='Copied';setTimeout(()=>$('copyBtn').textContent='Copy sanitized scope',1400)}catch(e){alert(scopeText())}});
-render();
+const tiers={quick:{title:'IN SCOPE — Quick Utility',price:350,why:'No persistence and no external integration are required.'},working:{title:'IN SCOPE — Working Micro-App',price:650,why:'The job needs simple saved records but no external integration.'},connected:{title:'IN SCOPE — Connected Micro-App',price:1250,why:'The job needs simple saved records or an operational surface plus one bounded external integration.'}};
+let last=null;
+function fields(){return [...new Set($('fields').value.split(/[\n,]+/).map(v=>v.trim()).filter(Boolean))]}
+function assess(){
+  const f=fields();
+  const missing=[];
+  const hard=[];
+  if(!$('outcome').value.trim())missing.push('State the operator outcome.');
+  if(!f.length)missing.push('List the core fields.');
+  if(!$('acceptance').value.trim())missing.push('Define one concrete “done when” acceptance test.');
+  if(f.length>5)hard.push(`You listed ${f.length} core fields; the standard lane allows at most 5.`);
+  if($('roles').value==='2')hard.push('Multiple roles/custom RBAC is outside the standard lane.');
+  if($('integrations').value==='2')hard.push('Two or more integrations are outside the standard lane.');
+  if($('sensitive').value==='yes')hard.push('Regulated or highly sensitive data handling requires separate scope.');
+  if($('payments').value==='yes')hard.push('Embedded payment processing is outside the standard lane.');
+  if($('complex').value==='yes')hard.push('Complex relational data/reporting requires separate scope.');
+  if(hard.length)return {state:'out',title:'OUT OF STANDARD SCOPE',explain:'This should not be forced into the fixed-price lane.',reasons:hard,next:'Send it for a separate quote only if you still want Solarwave to evaluate the larger job.'};
+  if(missing.length)return {state:'needs',title:'NEEDS INFO',explain:'The standard lane cannot price an ambiguous requirement.',reasons:missing,next:'Fill the missing items. The fit check will then return a fixed tier or a clean OUT OF SCOPE.'};
+  let key='quick';
+  if($('integrations').value==='1')key='connected'; else if($('persistence').value==='yes')key='working';
+  const t=tiers[key];
+  const inclusions=[`${f.length} core field${f.length===1?'':'s'} within the five-field limit.`,'One standard role / no custom RBAC.',$('persistence').value==='yes'?'Simple persistence included.':'No persistent CRUD required.',$('integrations').value==='1'?'One bounded external integration included.':'No external integration required.','One explicit acceptance test.'];
+  return {state:'in',key,title:t.title,price:t.price,explain:t.why,reasons:inclusions,next:'If this is the real job, send this normalized scope. Solarwave returns the exact inclusions/exclusions and invoice path before production.'};
+}
+function normalized(r){
+ const f=fields();
+ const lines=[
+  'SOLARWAVE FIT CHECK',
+  '',
+  `Decision: ${r.title}`,
+  r.price?`Standard wholesale: $${r.price.toLocaleString('en-US')}`:'Standard wholesale: Not assigned',
+  `Agency: ${$('agency').value.trim()||'[not supplied]'}`,
+  `Job: ${$('job').value.trim()||'[not supplied]'}`,
+  `Outcome: ${$('outcome').value.trim()||'[missing]'}`,
+  `Core fields (${f.length}): ${f.join(', ')||'[missing]'}`,
+  `Simple persistence: ${$('persistence').value==='yes'?'Yes':'No'}`,
+  `External integrations: ${$('integrations').value==='0'?'None':$('integrations').value==='1'?'One bounded integration':'Two or more'}`,
+  `Roles: ${$('roles').value==='1'?'One standard role':'Multiple/custom RBAC'}`,
+  `Sensitive/regulated data: ${$('sensitive').value==='yes'?'Yes':'No'}`,
+  `Embedded payments: ${$('payments').value==='yes'?'Yes':'No'}`,
+  `Complex relational/reporting: ${$('complex').value==='yes'?'Yes':'No'}`,
+  `Acceptance test: ${$('acceptance').value.trim()||'[missing]'}`,
+  '',
+  'Decision basis:',
+  ...r.reasons.map(x=>`- ${x}`),
+  '',
+  r.state==='in'?'Please confirm exact inclusions/exclusions and send the buyer-specific invoice/payment path.':'Please confirm whether this should be separately quoted.'
+ ];
+ return lines.join('\n');
+}
+function render(r){
+ last=r;
+ const s=$('status');
+ s.className='status '+(r.state==='in'?'good':r.state==='out'?'bad':'warn');
+ s.textContent=r.state==='in'?'IN SCOPE':r.state==='out'?'OUT OF SCOPE':'NEEDS INFO';
+ $('decision').textContent=r.title;
+ $('explain').textContent=r.explain;
+ $('priceWrap').hidden=!r.price;
+ if(r.price)$('price').innerHTML=`$${r.price.toLocaleString('en-US')} <small>wholesale</small>`;
+ $('reasons').hidden=false;
+ $('reasonTitle').textContent=r.state==='in'?'Included in this standard fit':'Decision basis';
+ $('reasonList').innerHTML='';
+ r.reasons.forEach(x=>{const li=document.createElement('li');li.textContent=x;$('reasonList').appendChild(li)});
+ $('next').textContent=r.next;
+ $('copyBtn').hidden=false;
+ $('sendBtn').hidden=false;
+ $('sendBtn').textContent=r.state==='in'?'Send scope + request invoice':'Send for review';
+ const subject=encodeURIComponent(r.state==='in'?`Solarwave accepted fit — ${r.price?'$'+r.price.toLocaleString('en-US'):''}`:'Solarwave scope review');
+ const body=encodeURIComponent(normalized(r));
+ $('sendBtn').href=`mailto:zachary.ribble@flowlinkrev.com?subject=${subject}&body=${body}`;
+}
+$('checkBtn').addEventListener('click',()=>render(assess()));
+$('copyBtn').addEventListener('click',async()=>{if(!last)return;const text=normalized(last);try{await navigator.clipboard.writeText(text);$('copyBtn').textContent='Copied';setTimeout(()=>$('copyBtn').textContent='Copy decision',1300)}catch(e){alert(text)}});
+$('exampleBtn').addEventListener('click',()=>{
+ $('agency').value='Example Automation Agency';$('job').value='Lead Intake Tracker';$('outcome').value='Create a lead, see its current status, and update the assigned owner from one simple operator screen.';$('fields').value='Name, Email, Service, Status, Owner';$('persistence').value='yes';$('integrations').value='0';$('roles').value='1';$('sensitive').value='no';$('payments').value='no';$('complex').value='no';$('acceptance').value='A user can create a lead, reload the page, update Status and Owner, and see both saved values after another reload.';render(assess());
+});
 </script>
 </body>
 </html>
