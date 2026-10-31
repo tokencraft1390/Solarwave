@@ -1,25 +1,37 @@
 # Solarwave State
 
-Snapshot date: 2026-10-29
+Snapshot date: 2026-10-31
 
 ## Commercial state
 
-- Offer: ACTIVE FOR AGENCY / WHITE-LABEL ORDER INTAKE.
+- Offer: **ACTIVE FOR AGENCY / WHITE-LABEL ORDER INTAKE**.
+- P0 objective: close one bounded agency pilot with at least **$350 cleared funds**.
 - Wholesale tiers: $350 Quick Utility / $650 Working Micro-App / $1,250 Connected Micro-App.
 - Optional rush lane: +$250 when explicitly accepted.
 - Optional recurring care: $199/month for up to two bounded changes per month; new integrations/redesigns are separate scope.
-- First clean agency pilot: $350 when the requirement fits Quick Utility scope.
 - Maximum five core user-defined fields in the standard lane.
-- Standard external target: same-business-day delivery after complete inputs and verified payment. Internal production-time targets are not customer guarantees.
-- Payment collection state: buyer-specific PayPal invoice is the current verified path; shareable one-click checkout has not been verified live.
-- A deal is counted as paid only after the processor/payment state is independently verified as cleared/completed/succeeded.
-- Verified customer payment receipts: none recorded in this snapshot.
+- New partners prepay standard jobs.
+- Payment collection state: buyer-specific invoice/accepted rail is the verified path; shareable one-click checkout has not been verified live.
+- Revenue is counted only after the processor/payment state is independently verified as cleared/completed/succeeded.
+- Verified customer payment receipts in the connected Revenue Proof ledger: none recorded as of this snapshot.
+
+## Current buyer proof
+
+Canonical buyer qualification surface:
+
+`https://fractal-frame-2ke2e2q.shipstatic.com`
+
+The current `main` implementation is a deterministic fit-check. It applies the bounded standard-lane rules and returns `IN SCOPE`, `OUT OF SCOPE`, or `NEEDS INFO`; it assigns the $350 / $650 / $1,250 tier only when the requirement satisfies the applicable rules.
+
+Truth boundary: this is a real qualification/scoping surface. It is **not** evidence of instant application generation, a completed buyer deployment, a one-click checkout, or customer revenue.
+
+Historical storefront evidence such as `https://baseless-mind-y8sgs9r.shipstatic.com` and `melded-tide-md3d37b.shipstatic.com` is not the canonical CTA for current outreach.
 
 ## Commercial positioning
 
-Solarwave is sold as **white-label fulfillment capacity**, not as access to the factory repository.
+Solarwave is sold as **white-label fulfillment capacity**, not access to the factory repository.
 
-Partner keeps: client relationship, branding, pricing/markup, account ownership.
+Partner keeps: client relationship, branding, pricing/markup, and account ownership.
 
 Solarwave supplies: bounded scope normalization, fixed wholesale price, buyer-specific artifact, validation/testing, evidence receipt, and agreed delivery package.
 
@@ -29,18 +41,17 @@ Ordinary delivery does not transfer the core generator, orchestration logic, int
 
 - Canonical repository: `tokencraft1390/Solarwave`.
 - Default branch: `main`.
-- Operator reports repository was changed to private on 2026-10-29.
-- During this synchronization, the connected GitHub repository metadata still returned `visibility: public`.
-- Therefore repository visibility is **CONFLICT / REVERIFY**, not asserted as private in the evidence ledger yet.
-- Until connector/API metadata confirms private, do not distribute the repository URL in sales outreach and treat the core source as non-public intended operating/IP material.
+- Connected GitHub metadata reverified 2026-10-31: **visibility = public**.
+- Do not distribute the core repository URL as the sales CTA or represent the repository as private.
 - Founder/admin access remains verified through the connected GitHub account.
+- If the intended posture is private, repository visibility must be changed and then reverified separately; this document does not claim that change has occurred.
 
 ## Canonical commercial documents
 
-- `README.md` — current buyer boundary, wholesale offer, architecture, and evidence posture.
+- `README.md` — current buyer boundary, proof surface, wholesale offer, architecture, and evidence posture.
 - `AGENCY_ONE_PAGER.md` — reseller-facing scope/pricing/order summary.
-- `COMMERCIALIZATION.md` — agency wholesale execution plan, first target cohort, outreach sequence, buying path, and KPIs.
-- `PROVENANCE.md` — founder-directed architecture and construction history boundary.
+- `COMMERCIALIZATION.md` — agency wholesale execution plan, buyer cohort, outreach sequence, buying path, and KPIs.
+- `PROVENANCE.md` — founder-directed architecture and construction-history boundary.
 - `RIGHTS.md` — rights/chain-of-title boundary separate from provenance.
 
 ## Buyer cohort — first execution wave
@@ -54,7 +65,9 @@ Ordinary delivery does not transfer the core generator, orchestration logic, int
 7. Automation Consulting Services — Matthew@AutomationConsultingServices.org
 8. BRYSK Solutions — sahil@brysk.so
 9. AgencyPace — hello@agencypace.com
-10. Catalytics Automation — public contact route only in the current verified research snapshot; do not invent an email.
+10. Catalytics Automation — public contact route only in the verified research snapshot; do not invent an email.
+
+The first cohort has already been contacted according to the current Linear/Gmail operating record. The next missing commercial evidence is a qualified reply containing one real sanitized backlog requirement, not another speculative product build.
 
 ## Standard scope boundary
 
@@ -82,28 +95,17 @@ The standard lane returns OUT OF SCOPE rather than improvising for multiple role
 
 `MATCH -> PAIN -> DEMAND -> BUYER -> PRICE -> SCOPE -> PAYMENT -> VERIFY -> GENERATE -> VALIDATE -> ACCEPTANCE TEST -> RECEIPT -> DELIVER -> REPEAT`
 
-New agency partners prepay standard jobs. Quote immediately when the sanitized requirement is sufficient. Do not create speculative factory capability for hypothetical demand.
+Quote immediately when a sanitized requirement is sufficient. Do not create speculative factory capability for hypothetical demand.
 
-## Railway state
+## Infrastructure state
 
-- Project: `solar-tenant-poc` (`4eaffc6a-0c4d-4824-a638-255e74a14182`).
-- Environment: `production` (`bd32a560-378b-4391-a5a0-a170bb1864cc`).
-- Existing service: `tenant-demo-001` (`7762ab2b-8002-42c8-8b1a-46383b7616a4`).
-- Previously observed state: `live`.
-- Source: image `python:3.11-slim`, not GitHub.
-- Replica count: 1.
-- Region: `sfo`.
-- Persistent volumes: none.
+Railway project: `solar-tenant-poc`.
 
-A repo-backed Solarwave deployment was attempted on 2026-10-29 and Railway returned: `Your trial has expired. Please select a plan to continue using Railway.`
+An existing service was previously observed live from the public image `python:3.11-slim`, not from this repository. A repo-backed Solarwave deployment attempt was blocked because the Railway trial/account plan had expired. That is an account-plan blocker, not evidence of an application runtime failure.
 
-Result: the new repo-backed Railway service is **not deployed**. The blocker is account plan state, not a verified application runtime failure.
+No persistent volume was verified for the existing hosted SQLite tenant demo. Do not depend on that path for paid persistent-state delivery until the storage boundary is verified.
 
-## ShipStatic state
-
-- Last verified canonical storefront before wholesale refresh: `melded-tide-md3d37b.shipstatic.com`.
-- It previously reflected the $5 / $10 / $50 direct micro-app offer and must not be treated as current agency-wholesale copy until a refreshed deployment is verified.
-- Cleaner alias `solarwave.shipstatic.com` was not live because the account domain limit required an upgrade.
+The current buyer fit-check is independently available on ShipStatic and does not require expanding Railway infrastructure to qualify a buyer.
 
 ## Validated implementation direction
 
@@ -116,15 +118,15 @@ Result: the new repo-backed Railway service is **not deployed**. The blocker is 
 - Hosted SQLite deployments require persistent storage.
 - Tenant execution should be isolated by service/container rather than arbitrary customer subprocesses in one shared runtime.
 
-## Current blockers
+## Current blockers / tensions
 
-1. GitHub API visibility still reports public despite the operator reporting a private transition; reverify before representing the repo as private.
-2. Shareable PayPal payment link has not been verified live; invoice remains the collection path.
-3. Railway repo deployment is blocked by expired trial/account plan state.
-4. Full automatic pay -> provision -> receipt workflow is not verified end-to-end.
-5. Existing Railway tenant demo has no persistent volume for hosted SQLite state.
-6. Last verified ShipStatic storefront contains superseded direct-to-buyer pricing until the agency-wholesale surface is redeployed and verified.
+1. **Repository visibility:** GitHub reports public; do not treat core source as private or use the repository as the buyer CTA.
+2. **Payment convenience:** shareable one-click checkout is not verified; buyer-specific invoicing/accepted payment rail remains sufficient to close a scoped job.
+3. **Automatic provisioning:** full pay -> provision -> receipt automation is not verified and is not required before the first paid bounded delivery.
+4. **Railway account state:** repo-backed deployment remains blocked by account-plan state; do not pay for speculative infrastructure before a buyer requires it.
+5. **Persistent state:** existing hosted SQLite demo lacks verified durable storage; persistent jobs must include an appropriate storage boundary.
+6. **Commercial evidence:** no cleared Solarwave customer receipt is recorded yet. This is the primary missing proof.
 
 ## Next commercialization gate
 
-Send the first agency cohort the white-label capacity offer, obtain one sanitized bounded requirement, return IN SCOPE / OUT OF SCOPE with fixed price and acceptance criteria, collect and verify a paid $350+ pilot, deliver the tested artifact with evidence receipt, then ask for the next job.
+Obtain one real sanitized agency backlog requirement, run it through the deterministic fit-check, return IN SCOPE / OUT OF SCOPE with fixed price, inclusions, exclusions and acceptance criteria, issue the available payment route, verify at least $350 in cleared funds before production, deliver the tested artifact with an evidence receipt, then ask for the next job.
