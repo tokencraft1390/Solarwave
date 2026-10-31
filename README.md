@@ -62,9 +62,11 @@ Production rules:
 
 ## Verified infrastructure state
 
-Current agency-wholesale sales surface: `https://baseless-mind-y8sgs9r.shipstatic.com`.
+Current deterministic buyer fit-check and agency-wholesale proof surface: `https://fractal-frame-2ke2e2q.shipstatic.com`.
 
-ShipStatic verified the deployment as successful on 2026-10-29 with labels `solarwave`, `sales`, `production`, and `agency-wholesale`. This storefront is buyer-facing; the GitHub repository is not the sales CTA.
+The earlier `https://baseless-mind-y8sgs9r.shipstatic.com` storefront remains historical buyer-surface evidence but is not the canonical fit-check for current outreach.
+
+The current GitHub `main` fit-check applies the standard lane rules and returns `IN SCOPE`, `OUT OF SCOPE`, or `NEEDS INFO`; it assigns the fixed $350 / $650 / $1,250 tier only when the requirement satisfies the bounded rules. This is a qualification/scoping surface, not a claim of instant application generation or a verified one-click checkout.
 
 Railway project: `solar-tenant-poc`.
 
